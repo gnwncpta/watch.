@@ -1,0 +1,305 @@
+:root {
+    --background-color: #141414;
+    --logo-color: #FFFFFF;
+    --text-color: #F2F2F2;
+    --title-bg-color: #BE0000;
+    --base-font: 'Helvetica', sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--base-font);
+    color: var(--text-color);
+}
+
+.container {
+    padding-top: 28.5px;
+    padding-left: 70px;
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+
+/* NAV SECTION STYLE */
+.navigation {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+
+.navigation > h1{
+    font-size: 35.5px;
+    letter-spacing: 1px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navigation > h1:after {
+    content: "";
+    width: 10px;
+    background: #BE0000;
+}
+
+.navigation > .nav {
+    position: relative;
+    top: -25px;
+    left: 420px;
+    width: 30%;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.navigation > .nav > a {
+    font-weight: 100;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.navigation > .nav > a:first-child{
+    font-weight: 600;
+}
+
+.navigation > .nav > a:first-child::after {
+    content: " ";
+    width: 50px;
+    height: 100px;
+    background-color: white;
+
+}
+
+.navigation > .nav > a:hover {
+    color: rgb(208, 0, 0);
+}
+
+.navigation > .profile {
+    position: relative;
+    bottom: 10px;
+}
+
+.navigation > .profile > h2 {
+    font-size: 17px;
+    float: right;
+    position: relative;
+    top: -45px;
+    right: 15px
+}
+
+.navigation > .profile > p {
+    font-size: 13px;
+    font-weight: 100;
+    float: right;
+    position: relative;
+    top: -22px;
+    left: 108px;
+
+}
+
+.navigation > .profile > img {
+    float: right;
+    width: 58px;
+    position: relative;
+    bottom: 57px;
+    right: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* ANIME SECTION STYLING */
+
+.anime {
+    margin-top: 57px;
+    /* border: 1px solid red; */
+}
+
+.anime > h2 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+.anime > p {
+    text-align: right;
+    float: right;
+    position: relative;
+    top: 10px;
+    left: 68px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.anime > .cards {
+    position: relative;
+    top: 10px;
+    width: 105%;
+    /* overflow-x: scroll; */
+    /* border: 1px solid red; */
+    clear: both;
+}
+
+.cards::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card {
+    float: left;
+    margin: 5px;
+}
+
+.card {
+    width: 189px;
+    height: 220.5px;    
+    background-color: var(--title-bg-color);
+    border-radius: 10px;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BZWZjMGUzNjQtZTI1NC00M2IxLTllZjQtZmY3MWUyNTdhNDQ3XkEyXkFqcGdeQXVyMTA3OTEyODI1._V1_UY1200_CR85,0,630,1200_AL_.jpg");
+    background-size: cover;
+    background-position: 10%;
+    position: relative;
+    left: 0px;
+    transition: .3s ease-in;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(15px);
+}
+
+.card:nth-child(2) {
+    background-image: url("https://miro.medium.com/max/909/0*JdWsZoqMqUeUcPDS.jpg");
+    background-position: bottom;
+}
+
+.card:nth-child(3) {
+    background-image: url("https://i1.wp.com/artforia.com/wp-content/uploads/2017/02/Kimi-no-na-wa-blu-ray.jpg");
+    background-position: 10% 75%;
+}
+
+.card:nth-child(4) {
+    background-image: url("https://fanart.tv/fanart/tv/87501/tvposter/k-on-52c84f8f2367d.jpg");
+    background-position: 0% 20%;
+}
+
+.card:nth-child(5) {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BZTQ0NWVlNmItYmM2Yi00YjcxLTk1YTQtOGY5YTc5ZjljYWY3XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg");
+    background-position: 0% 20%;
+}
+
+.card:nth-child(6) {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMTcwNjUwNDctNzI5Ni00MDg1LWE0YTEtODRhYTMxZTA5OGRjXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_UY1200_CR85,0,630,1200_AL_.jpg");
+    background-position: 0% 5%;
+}
+
+.card > .img {
+    position: relative;
+    top: 134px;
+    border-radius: 0px 0px 10px 10px;
+    width: inherit;
+    height: 50px;
+    background-color: var(--title-bg-color);
+}
+
+.card > .header {
+    z-index: 1;
+    position: relative;
+    top: 162px;
+    left: -1px;
+    /* border: 1px solid red; */
+}
+
+.card > .header > p {
+    position: inherit;
+    top: 16px;
+    left: 15px;
+    font-size: 12px;
+}
+
+.card > .header > p:last-child {
+    font-size: 20px;
+}
+
+
+
+
+
+/* USA MOVIES STYLING */
+
+.usa-movies {
+    position: relative;
+    top: 70px;
+}
+
+.usa-movies > h2 {
+    font-size: 30px;
+}
+
+.usa-movies > p {
+    float: right;
+    position: relative;
+    top: -25px;
+    font-weight: 100;
+    font-size: 20px;
+    border: 1px solid red;
+}
+
+.usa-movies > .cards {
+    position: relative;
+    top: 10px;
+}
+
+.usa-movies > .cards {
+    /* border: 1px solid red; */
+    width: 105%;
+}
+
+.usa-movies > .cards > .card > .img {
+    position: relative;
+    top: 134px;
+    border-radius: 0px 0px 10px 10px;
+    width: inherit;
+    height: 50px;
+    background-color: var(--title-bg-color);
+}
+
+.usa-movies > .cards > .card:nth-child(5) {
+    position: relative;
+    bottom: 25px;
+}
+
+.usa-movies > .cards > .card:last-child {
+    position: relative;
+    bottom: 25px;
+}   
+
+.usa-movies > .cards .card:first-child{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/81ExhpBEbHL._SL1371_.jpg")
+}
+
+.usa-movies > .cards .card:nth-child(2){
+    background-image: url("https://ecs7.tokopedia.net/img/cache/700/product-1/2020/2/22/24964874/24964874_03ed5058-9668-4237-b2f8-40179f9fbf8b_1152_1152")
+}
+
+.usa-movies > .cards .card:nth-child(3){
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Fast_and_Furious_Poster.jpg/220px-Fast_and_Furious_Poster.jpg")
+}
+
+.usa-movies > .cards .card:nth-child(4){
+    background-image: url("https://upload.wikimedia.org/wikipedia/id/5/5e/IBoy_poster.jpg");
+    background-position: 0% 170%;
+}
+
+.usa-movies > .cards .card:nth-child(5){
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/5/5c/Who_am_I_movie_poster.jpg");
+    background-position: 0% 50%;
+}
+
+.usa-movies > .cards .card:nth-child(6){
+    background-image: url("https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg");
+    background-position: 0% 5%;
+}
