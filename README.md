@@ -8,7 +8,9 @@ Watch. is a landing page for web streaming
 - HTML
 - CSS
 
-CSS
+## CSS Impactful Properties:
+- Float
+- Position
 
 
 ###### Design with Adobe XD
