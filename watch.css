@@ -31,28 +31,28 @@ body {
 .navigation {
     /* border: 1px solid red; */
     margin-top: 10px;
+    /* height: 100%; */
 }
 
 .navigation > h1{
     font-size: 35.5px;
     letter-spacing: 1px;
     display: inline-block;
+    position: relative;
+    line-height: auto;
     cursor: pointer;
-}
-
-.navigation > h1:after {
-    content: "";
-    width: 10px;
-    background: #BE0000;
+    /* border: 1px solid red; */
 }
 
 .navigation > .nav {
     position: relative;
-    top: -25px;
-    left: 420px;
-    width: 30%;
+    left: 340px;
+    bottom: 7px;
+
+    display: inline-block;
     text-align: center;
     /* border: 1px solid red; */
+    /* margin: auto; */
 }
 
 .navigation > .nav > a {
@@ -81,37 +81,51 @@ body {
     transition: .1s ease-in-out;
 }
 
+/* Profile Section */
+
 .navigation > .profile {
+    /* border: 1px solid red; */
+    float: right;
+    /* margin: auto; */
+    /* padding: 10px 0; */
+    /* text-align: right; */
     position: relative;
     bottom: 10px;
+    /* box-sizing: border-box; */
 }
 
-.navigation > .profile > h2 {
-    font-size: 17px;
-    float: right;
-    position: relative;
-    top: -45px;
-    right: 15px
+.navigation > .profile > .name {
+    /* border: 1px solid red; */
+    font-size: 12px;
+    float: left;
+    margin-right: 10px;
+    padding: 13px 0;
 }
 
-.navigation > .profile > p {
-    font-size: 13px;
-    font-weight: 100;
-    float: right;
-    position: relative;
-    top: -22px;
-    left: 108px;
+.navigation > .profile > .name > h2 {
+    font-weight: 600;
+}
 
+.navigation > .profile > .name > p {
+    text-align: right;
+    font-weight: 300;
 }
 
 .navigation > .profile > img {
-    float: right;
+    /* margin: auto; */
     width: 58px;
-    position: relative;
-    bottom: 57px;
-    right: 0px;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 13px;
+    cursor: pointer;;
+    /* position: relative; */
+    /* bottom: 57px;
+    right: 0px; */
+    /* border: 1px solid red; */
+}
+
+.navigation > .profile > img::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
@@ -124,7 +138,7 @@ body {
 }
 
 .anime > h2 {
-    font-size: 30px;
+    font-size: 35px;
     position: relative;
     top: 30px;
     /* display: inline; */
@@ -264,7 +278,7 @@ body {
 }
 
 .usa-movies > h1 {
-    font-size: 30px;
+    font-size: 35px;
     position: relative;
     top: 30px;
 }
