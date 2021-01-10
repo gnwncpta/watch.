@@ -1,7 +1,16 @@
 # Watch.
 
-is a landing page for web streaming 
+Watch. is a landing page for web streaming
 
-Tech used:
+
+
+## 🏝 Languages used:
 - HTML
 - CSS
+
+## 🏖 CSS Impactful Properties:
+- Float
+- Position
+
+
+###### Design with Adobe XD
