@@ -4,11 +4,11 @@ Watch. is a landing page for web streaming
 
 
 
-## Languages used:
+## 🏝 Languages used:
 - HTML
 - CSS
 
-## CSS Impactful Properties:
+## 🏖 CSS Impactful Properties:
 - Float
 - Position
 
