@@ -3,7 +3,7 @@
     --logo-color: #FFFFFF;
     --text-color: #F2F2F2;
     --title-bg-color: #BE0000;
-    --base-font: 'Helvetica', sans-serif
+    --base-font: 'Helvetica', sans-serif;
 }
 
 * {
@@ -59,6 +59,7 @@ body {
     color: var(--text-color);
     margin-right: 30px;
     display: inline-block;
+    transition: .1s ease-in-out;
 }
 
 .navigation > .nav > a:first-child{
@@ -75,6 +76,7 @@ body {
 
 .navigation > .nav > a:hover {
     color: rgb(208, 0, 0);
+    transition: .1s ease-in-out;
 }
 
 .navigation > .profile {
@@ -115,31 +117,36 @@ body {
 
 .anime {
     margin-top: 57px;
+    overflow-wrap: normal;
     /* border: 1px solid red; */
 }
 
 .anime > h2 {
-    display: inline-block;
     font-size: 30px;
+    position: relative;
+    top: 30px;
+    /* display: inline; */
+    /* border: 1px solid red; */
 }
 
 .anime > p {
     text-align: right;
-    float: right;
-    position: relative;
-    top: 10px;
-    left: 68px;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 20px;
+    /* float: right; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* left: 68px; */
+    /* border: 1px solid red; */
 }
 
 .anime > .cards {
     position: relative;
     top: 10px;
     width: 105%;
+    clear: both;
     /* overflow-x: scroll; */
     /* border: 1px solid red; */
-    clear: both;
 }
 
 .cards::after {
@@ -150,25 +157,27 @@ body {
 
 .card {
     float: left;
-    margin: 5px;
+    margin: 8px 5px;
 }
 
 .card {
-    width: 189px;
-    height: 220.5px;    
+    width: 190px;
+    height: 220.5px;
     background-color: var(--title-bg-color);
-    border-radius: 10px;
-    background-image: url("https://m.media-amazon.com/images/M/MV5BZWZjMGUzNjQtZTI1NC00M2IxLTllZjQtZmY3MWUyNTdhNDQ3XkEyXkFqcGdeQXVyMTA3OTEyODI1._V1_UY1200_CR85,0,630,1200_AL_.jpg");
+    border-radius: 13px;
     background-size: cover;
-    background-position: 10%;
-    position: relative;
-    left: 0px;
+    /* position: relative; */
     transition: .3s ease-in;
 }
 
 .card:hover {
     cursor: pointer;
     transform: translateY(15px);
+}
+
+.card:first-child{
+    background-image: url("https://m.media-amazon.com/images/M/MV5BZWZjMGUzNjQtZTI1NC00M2IxLTllZjQtZmY3MWUyNTdhNDQ3XkEyXkFqcGdeQXVyMTA3OTEyODI1._V1_UY1200_CR85,0,630,1200_AL_.jpg");
+    background-position: 10%;
 }
 
 .card:nth-child(2) {
@@ -205,23 +214,34 @@ body {
     background-color: var(--title-bg-color);
 }
 
+.card > .img:first-child {
+    position: relative;
+    top: 140px;
+    border-radius: 0px 0px 10px 10px;
+    width: inherit;
+    height: 50px;
+    background-color: var(--title-bg-color);
+}
+
 .card > .header {
     z-index: 1;
     position: relative;
-    top: 162px;
+    top: 170px;
     left: -1px;
     /* border: 1px solid red; */
 }
 
 .card > .header > p {
     position: inherit;
-    top: 16px;
+    top: 10px;
     left: 15px;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: lighter;
 }
 
 .card > .header > p:last-child {
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 
@@ -232,31 +252,43 @@ body {
 
 .usa-movies {
     position: relative;
-    top: 70px;
+    top: 50px;
+    /* border: 1px solid red; */
+    overflow-wrap: normal;
+    /* margin-top: 57px; */
 }
 
-.usa-movies > h2 {
+.usa-movies > h1 {
     font-size: 30px;
+    position: relative;
+    top: 30px;
 }
 
 .usa-movies > p {
-    float: right;
-    position: relative;
-    top: -25px;
+    text-align: right;
     font-weight: 100;
     font-size: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    /* display: inline; */
 }
 
 .usa-movies > .cards {
     position: relative;
     top: 10px;
+    /* border: 1px solid limegreen; */
+}
+
+.usa-movies > .cards::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .usa-movies > .cards {
     /* border: 1px solid red; */
     width: 105%;
-}
+}   
+
 
 .usa-movies > .cards > .card > .img {
     position: relative;
@@ -266,16 +298,6 @@ body {
     height: 50px;
     background-color: var(--title-bg-color);
 }
-
-.usa-movies > .cards > .card:nth-child(5) {
-    position: relative;
-    bottom: 25px;
-}
-
-.usa-movies > .cards > .card:last-child {
-    position: relative;
-    bottom: 25px;
-}   
 
 .usa-movies > .cards .card:first-child{
     background-image: url("https://images-na.ssl-images-amazon.com/images/I/81ExhpBEbHL._SL1371_.jpg")
